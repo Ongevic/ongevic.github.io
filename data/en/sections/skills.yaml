@@ -1,0 +1,22 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Linguistics
+  summary: "Expertise in theoretical and applied linguistics, including syntax, semantics, and phonology."
+  url: "https://en.wikipedia.org/wiki/Linguistics"
+
+- name: Programming (Python)
+  summary: "Proficient in Python for data analysis, scripting, and computational linguistics tasks."
+  url: "https://en.wikipedia.org/wiki/Python_(programming_language)"
+
+- name: Data Analysis
+  summary: "Experienced in statistical analysis and data visualization for linguistic research."
+  url: "https://en.wikipedia.org/wiki/Data_analysis"
