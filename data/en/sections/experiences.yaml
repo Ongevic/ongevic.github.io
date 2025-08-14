@@ -1,0 +1,36 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+
+# Your experiences
+experiences:
+- company:
+    name: Aarhus University
+    url: "https://www.au.dk/"
+    location: "Aarhus"
+    overview: "Aarhus University is a prestigious public research university located in Aarhus, Denmark."
+  positions:
+  - designation: PhD Researcher
+    start: 2022-01-01
+    responsibilities:
+    - "Conducting research on syntax and semantics of Bantu languages."
+    - "Explored generative syntax frameworks"
+    - "Produced cross-linguistic analyses"
+
+- company:
+    name: Bantuland Research Institute
+    url: "#"
+    location: "Nairobi"
+    overview: "A research institute dedicated to the study of Bantu languages."
+  positions:
+  - designation: Research Assistant
+    start: 2020-06-01
+    end: 2021-12-31
+    responsibilities:
+    - "Supported fieldwork and data analysis for language documentation projects."
+    - "Collected and analyzed linguistic data"
+    - "Co-authored a paper on morphological alignment"
