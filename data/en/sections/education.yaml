@@ -1,0 +1,28 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html
+  enable: true
+  weight: 4
+  showOnNavbar: true
+
+# Your Education degrees
+degrees:
+- name: PhD in Computational Linguistics
+  icon: fa-microscope
+  timeframe: "2022-Present"
+  institution:
+    name: Aarhus University
+    url: "https://www.au.dk/"
+  extracurricularActivities:
+  - "Doctoral research focusing on generative syntax and language acquisition."
+
+- name: Master's in Linguistics
+  icon: fa-graduation-cap
+  timeframe: "2018-2020"
+  institution:
+    name: University of Nairobi
+    url: "https://www.uonbi.ac.ke/"
+  extracurricularActivities:
+  - "Master's thesis exploring morphological analysis in Bantu languages."

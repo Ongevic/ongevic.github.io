@@ -1,0 +1,24 @@
+# section information
+section:
+  name: Research
+  id: research
+  enable: true
+  weight: 5
+  showOnNavbar: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Academic
+  filter: "academic"
+- name: Publications
+  filter: "publications"
+
+# your projects
+projects:
+- name: "Generative Syntax of Bantu Languages"
+  role: "PhD Researcher"
+  timeline: "2022 - Present"
+  summary: "This ongoing research project explores the generative syntax frameworks that can model complex linguistic phenomena in Bantu languages. The project combines theoretical linguistics, experimental fieldwork, and computational analysis to uncover patterns across languages."
+  tags: ["academic"]
