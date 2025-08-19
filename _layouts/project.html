@@ -1,0 +1,147 @@
+---
+layout: default
+---
+
+<article class="project-page">
+    <div class="container">
+        <header class="project-header">
+            <h1>{{ page.title }}</h1>
+            <div class="project-meta">
+                <p class="status"><strong>Status:</strong> <span class="status-badge {{ page.status | downcase }}">{{
+                        page.status }}</span></p>
+                <p class="timeline"><strong>Timeline:</strong> {{ page.start_date }} - {{ page.end_date }}</p>
+                {% if page.funding %}
+                <p class="funding"><strong>Funding:</strong> {{ page.funding }}</p>
+                {% endif %}
+                {% if page.team %}
+                <p class="team"><strong>Team:</strong> {{ page.team }}</p>
+                {% endif %}
+            </div>
+            {% if page.image %}
+            <div class="project-image">
+                <img src="{{ page.image }}" alt="{{ page.title }}">
+            </div>
+            {% endif %}
+        </header>
+
+        <div class="project-content">
+            {{ content }}
+        </div>
+
+        <div class="project-navigation">
+            <a href="/projects" class="btn btn-primary">← Back to Projects</a>
+        </div>
+    </div>
+</article>
+
+<style>
+    .project-page {
+        padding: 120px 0 80px;
+    }
+
+    .project-header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid var(--light-gray);
+    }
+
+    .project-header h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .project-meta {
+        color: var(--text-color);
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+    .project-meta p {
+        margin-bottom: 10px;
+    }
+
+    .status-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .status-badge.active {
+        background-color: #27ae60;
+        color: white;
+    }
+
+    .status-badge.completed {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+
+    .status-badge.planned {
+        background-color: #f39c12;
+        color: white;
+    }
+
+    .project-image {
+        margin: 30px 0;
+    }
+
+    .project-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-content {
+        max-width: 800px;
+        margin: 0 auto 50px;
+        line-height: 1.8;
+    }
+
+    .project-content h2 {
+        color: var(--primary-color);
+        margin: 40px 0 20px;
+        font-size: 1.8rem;
+    }
+
+    .project-content h3 {
+        color: var(--secondary-color);
+        margin: 30px 0 15px;
+        font-size: 1.4rem;
+    }
+
+    .project-content p {
+        margin-bottom: 20px;
+    }
+
+    .project-content ul,
+    .project-content ol {
+        margin-bottom: 20px;
+        padding-left: 30px;
+    }
+
+    .project-content li {
+        margin-bottom: 8px;
+    }
+
+    .project-navigation {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 2px solid var(--light-gray);
+    }
+
+    @media (max-width: 768px) {
+        .project-header h1 {
+            font-size: 2rem;
+        }
+
+        .project-content {
+            padding: 0 20px;
+        }
+    }
+</style>

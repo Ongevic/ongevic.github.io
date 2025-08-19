@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+<article class="publication-page">
+    <div class="container">
+        <header class="publication-header">
+            <h1>{{ page.title }}</h1>
+            <div class="publication-meta">
+                <p class="authors"><strong>Authors:</strong> {{ page.authors }}</p>
+                <p class="venue"><strong>Venue:</strong> {{ page.venue }}, {{ page.year }}</p>
+                {% if page.doi %}
+                <p class="doi"><strong>DOI:</strong> <a href="https://doi.org/{{ page.doi }}" target="_blank">{{
+                        page.doi }}</a></p>
+                {% endif %}
+            </div>
+        </header>
+
+        <div class="publication-content">
+            {{ content }}
+        </div>
+
+        <div class="publication-navigation">
+            <a href="/publications" class="btn btn-primary">← Back to Publications</a>
+        </div>
+    </div>
+</article>
+
+<style>
+    .publication-page {
+        padding: 120px 0 80px;
+    }
+
+    .publication-header {
+        text-align: center;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid var(--light-gray);
+    }
+
+    .publication-header h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .publication-meta {
+        color: var(--text-color);
+        line-height: 1.8;
+    }
+
+    .publication-meta p {
+        margin-bottom: 10px;
+    }
+
+    .publication-meta .doi a {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
+
+    .publication-meta .doi a:hover {
+        text-decoration: underline;
+    }
+
+    .publication-content {
+        max-width: 800px;
+        margin: 0 auto 50px;
+        line-height: 1.8;
+    }
+
+    .publication-content h2 {
+        color: var(--primary-color);
+        margin: 40px 0 20px;
+        font-size: 1.8rem;
+    }
+
+    .publication-content h3 {
+        color: var(--secondary-color);
+        margin: 30px 0 15px;
+        font-size: 1.4rem;
+    }
+
+    .publication-content p {
+        margin-bottom: 20px;
+    }
+
+    .publication-content ul,
+    .publication-content ol {
+        margin-bottom: 20px;
+        padding-left: 30px;
+    }
+
+    .publication-content li {
+        margin-bottom: 8px;
+    }
+
+    .publication-navigation {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 2px solid var(--light-gray);
+    }
+
+    @media (max-width: 768px) {
+        .publication-header h1 {
+            font-size: 2rem;
+        }
+
+        .publication-content {
+            padding: 0 20px;
+        }
+    }
+</style>
