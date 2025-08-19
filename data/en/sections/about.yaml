@@ -21,7 +21,7 @@ summary: "Hi! I'm Victor Nyabutiongera, a researcher focusing on the syntax and 
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "victor.ongera@gmail.com"
+  url: "mailto:victor.ongera@gmail.com"
 
 - name: Github
   icon: "fab fa-github"
