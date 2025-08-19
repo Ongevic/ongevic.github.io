@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Nyabuti Ong'era - Research</title>
+    <meta name="description"
+        content="PhD Candidate in Linguistics specializing in theoretical syntax, language acquisition, and experimental linguistics">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #7c3aed;
+            --text-color: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-color: #ffffff;
+            --card-bg: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-color);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8rem 0 4rem 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem auto;
+            border: 4px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .research-interests {
+            margin-top: 2rem;
+        }
+
+        .research-interests h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .research-interests ul {
+            list-style: none;
+        }
+
+        .research-interests li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .research-interests li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Research Grid */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .research-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .research-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .research-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .research-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .read-more:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Publications */
+        .publications-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .publication-item {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .publication-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .publication-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .authors {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .venue {
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .doi-link {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-right: 1rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .doi-link:hover {
+            background: var(--secondary-color);
+        }
+
+        /* News Section */
+        .news-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .news-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: var(--primary-color);
+            min-width: 100px;
+            margin-right: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .news-item p {
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        /* Contact */
+        .contact-info {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            width: 30px;
+        }
+
+        .contact-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-color);
+            color: white;
+            padding: 3rem 0 1rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            transition: background-color 0.2s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .news-item {
+                flex-direction: column;
+            }
+
+            .news-date {
+                margin-bottom: 0.5rem;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <a href="#home">Victor Nyabuti Ong'era</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image">VO</div>
+                <h1>Victor Nyabuti Ong'era</h1>
+                <p class="subtitle">PhD Candidate in Linguistics</p>
+                <p class="description">
+                    I am a PhD candidate in Linguistics specializing in theoretical and experimental approaches to
+                    language,
+                    including syntax, language acquisition, and imperative clauses.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#research" class="btn btn-primary">View Research</a>
+                    <a href="#publications" class="btn btn-secondary">Publications</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a PhD candidate in Linguistics at University Name, specializing in theoretical syntax,
+                        language acquisition, and experimental linguistics. My research focuses on understanding the
+                        structure of sentences and the principles governing word order and grammatical relations.
+                    </p>
+                    <p>
+                        My work combines theoretical and experimental approaches to investigate how children and adults
+                        learn language and develop grammatical knowledge, with a particular focus on imperative clauses.
+                    </p>
+                    <div class="research-interests">
+                        <h3>Research Interests</h3>
+                        <ul>
+                            <li><strong>Theoretical Syntax</strong>: Exploring the structure of sentences and the
+                                principles governing word order and grammatical relations</li>
+                            <li><strong>Language Acquisition</strong>: Investigating how children and adults learn
+                                language and develop grammatical knowledge</li>
+                            <li><strong>Experimental Linguistics</strong>: Using psycholinguistic methods to test
+                                linguistic theories and understand language processing</li>
+                            <li><strong>Imperative Clauses</strong>: Syntax and semantics of imperative constructions
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2>Current Research</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>Syntax and Semantics of Imperative Clauses</h3>
+                    <p>Investigating the structural properties and meaning of imperative constructions across languages.
+                    </p>
+                    <a href="#" class="read-more">Learn More →</a>
+                </div>
+                <div class="research-card">
+                    <h3>Acquisition of Complex Syntactic Structures</h3>
+                    <p>Studying how children acquire and process complex grammatical constructions during language
+                        development.</p>
+                    <a href="#" class="read-more">Learn More →</a>
+                </div>
+                <div class="research-card">
+                    <h3>Experimental Approaches to Grammaticality</h3>
+                    <p>Using psycholinguistic methods to test linguistic theories and understand language processing
+                        mechanisms.</p>
+                    <a href="#" class="read-more">Learn More →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2>Recent Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <h3>Syntax and semantics of imperative clauses</h3>
+                    <p class="authors"><strong>Nyabuti, V.</strong></p>
+                    <p class="venue">Journal of Linguistics, 2023</p>
+                    <a href="#" class="doi-link" target="_blank">View Publication</a>
+                </div>
+                <div class="publication-item">
+                    <h3>Acquisition of complex syntactic structures</h3>
+                    <p class="authors"><strong>Nyabuti, V.</strong> & Collaborator</p>
+                    <p class="venue">Language Acquisition, 15(4), 210–230, 2022</p>
+                    <a href="#" class="doi-link" target="_blank">View Publication</a>
+                </div>
+                <div class="publication-item">
+                    <h3>Experimental approaches to grammaticality judgments</h3>
+                    <p class="authors"><strong>Nyabuti, V.</strong></p>
+                    <p class="venue">Linguistic Inquiry, 2021</p>
+                    <a href="#" class="doi-link" target="_blank">View Publication</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">View All Publications</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+        <div class="container">
+            <h2>Recent News</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">June 2025</span>
+                    <p>Presented research on imperative clauses at the Annual Linguistics Conference.</p>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">March 2025</span>
+                    <p>Published a new article on language acquisition in <em>Language Acquisition</em> journal.</p>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">December 2024</span>
+                    <p>Received the Best Student Paper Award at the Syntax Workshop.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:victor.ongera@example.com">victor.ongera@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/ongevic" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/victor-ongera" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>University Name, City, Country</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Victor Nyabuti Ong'era</h3>
+                    <p>PhD Candidate in Linguistics specializing in theoretical syntax, language acquisition, and
+                        experimental linguistics.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:victor.ongera@example.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/ongevic" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/victor-ongera" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/victor_ongera" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Victor Nyabuti Ong'era. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -6,12 +6,12 @@ title: "Home"
 <div class="hero-section">
   <div class="container">
     <div class="hero-content">
-      <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Your Name" class="profile-image">
-      <h1>Your Name</h1>
-      <p class="subtitle">Research Scientist | Your Field</p>
+      <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="Victor Nyabuti Ong'era" class="profile-image">
+      <h1>Victor Nyabuti Ong'era</h1>
+      <p class="subtitle">PhD Candidate in Linguistics</p>
       <p class="description">
-        Welcome to my research website! I'm passionate about [your research area] 
-        and currently working on [brief description of current work].
+        I am a PhD candidate in Linguistics specializing in theoretical and experimental approaches to language, 
+        including syntax, language acquisition, and imperative clauses.
       </p>
       <div class="hero-buttons">
         <a href="#research" class="btn btn-primary">View Research</a>
@@ -28,20 +28,21 @@ title: "Home"
     <div class="about-content">
       <div class="about-text">
         <p>
-          I am a [your position] at [your institution], specializing in [your research areas]. 
-          My work focuses on [brief description of your research interests and goals].
+          I am a PhD candidate in Linguistics at University Name, specializing in theoretical syntax, 
+          language acquisition, and experimental linguistics. My research focuses on understanding the 
+          structure of sentences and the principles governing word order and grammatical relations.
         </p>
         <p>
-          I received my [degree] from [university] in [year], and have been working on 
-          [specific research projects or areas] since then.
+          My work combines theoretical and experimental approaches to investigate how children and adults 
+          learn language and develop grammatical knowledge, with a particular focus on imperative clauses.
         </p>
         <div class="research-interests">
           <h3>Research Interests</h3>
           <ul>
-            <li>Research Area 1</li>
-            <li>Research Area 2</li>
-            <li>Research Area 3</li>
-            <li>Research Area 4</li>
+            <li><strong>Theoretical Syntax</strong>: Exploring the structure of sentences and the principles governing word order and grammatical relations</li>
+            <li><strong>Language Acquisition</strong>: Investigating how children and adults learn language and develop grammatical knowledge</li>
+            <li><strong>Experimental Linguistics</strong>: Using psycholinguistic methods to test linguistic theories and understand language processing</li>
+            <li><strong>Imperative Clauses</strong>: Syntax and semantics of imperative constructions</li>
           </ul>
         </div>
       </div>
@@ -53,13 +54,21 @@ title: "Home"
   <div class="container">
     <h2>Current Research</h2>
     <div class="research-grid">
-      {% for project in site.projects limit:3 %}
       <div class="research-card">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.excerpt }}</p>
-        <a href="{{ project.url }}" class="read-more">Learn More →</a>
+        <h3>Syntax and Semantics of Imperative Clauses</h3>
+        <p>Investigating the structural properties and meaning of imperative constructions across languages.</p>
+        <a href="/projects/imperative-clauses" class="read-more">Learn More →</a>
       </div>
-      {% endfor %}
+      <div class="research-card">
+        <h3>Acquisition of Complex Syntactic Structures</h3>
+        <p>Studying how children acquire and process complex grammatical constructions during language development.</p>
+        <a href="/projects/language-acquisition" class="read-more">Learn More →</a>
+      </div>
+      <div class="research-card">
+        <h3>Experimental Approaches to Grammaticality</h3>
+        <p>Using psycholinguistic methods to test linguistic theories and understand language processing mechanisms.</p>
+        <a href="/projects/experimental-linguistics" class="read-more">Learn More →</a>
+      </div>
     </div>
     <div class="text-center">
       <a href="/projects" class="btn btn-primary">View All Projects</a>
@@ -71,19 +80,47 @@ title: "Home"
   <div class="container">
     <h2>Recent Publications</h2>
     <div class="publications-list">
-      {% for publication in site.publications limit:5 %}
       <div class="publication-item">
-        <h3>{{ publication.title }}</h3>
-        <p class="authors">{{ publication.authors }}</p>
-        <p class="venue">{{ publication.venue }}, {{ publication.year }}</p>
-        {% if publication.doi %}
-        <a href="https://doi.org/{{ publication.doi }}" class="doi-link" target="_blank">DOI</a>
-        {% endif %}
+        <h3>Syntax and semantics of imperative clauses</h3>
+        <p class="authors"><strong>Nyabuti, V.</strong></p>
+        <p class="venue">Journal of Linguistics, 2023</p>
+        <a href="#" class="doi-link" target="_blank">View Publication</a>
       </div>
-      {% endfor %}
+      <div class="publication-item">
+        <h3>Acquisition of complex syntactic structures</h3>
+        <p class="authors"><strong>Nyabuti, V.</strong> & Collaborator</p>
+        <p class="venue">Language Acquisition, 15(4), 210–230, 2022</p>
+        <a href="#" class="doi-link" target="_blank">View Publication</a>
+      </div>
+      <div class="publication-item">
+        <h3>Experimental approaches to grammaticality judgments</h3>
+        <p class="authors"><strong>Nyabuti, V.</strong></p>
+        <p class="venue">Linguistic Inquiry, 2021</p>
+        <a href="#" class="doi-link" target="_blank">View Publication</a>
+      </div>
     </div>
     <div class="text-center">
       <a href="/publications" class="btn btn-primary">View All Publications</a>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="section">
+  <div class="container">
+    <h2>Recent News</h2>
+    <div class="news-list">
+      <div class="news-item">
+        <span class="news-date">June 2025</span>
+        <p>Presented research on imperative clauses at the Annual Linguistics Conference.</p>
+      </div>
+      <div class="news-item">
+        <span class="news-date">March 2025</span>
+        <p>Published a new article on language acquisition in <em>Language Acquisition</em> journal.</p>
+      </div>
+      <div class="news-item">
+        <span class="news-date">December 2024</span>
+        <p>Received the Best Student Paper Award at the Syntax Workshop.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -98,15 +135,15 @@ title: "Home"
       </div>
       <div class="contact-item">
         <i class="fab fa-github"></i>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://github.com/ongevic" target="_blank">GitHub</a>
       </div>
       <div class="contact-item">
         <i class="fab fa-linkedin"></i>
-        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        <a href="https://linkedin.com/in/victor-ongera" target="_blank">LinkedIn</a>
       </div>
       <div class="contact-item">
         <i class="fas fa-map-marker-alt"></i>
-        <span>Your Institution, City, Country</span>
+        <span>University Name, City, Country</span>
       </div>
     </div>
   </div>

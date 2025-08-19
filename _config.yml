@@ -1,9 +1,9 @@
 # Personal Research Website Configuration
-title: "Your Name - Research"
-description: "Personal research website showcasing academic work, publications, and projects"
-author: "Your Name"
-email: "your.email@institution.edu"
-url: "https://yourusername.github.io"
+title: "Victor Nyabuti Ong'era - Research"
+description: "PhD Candidate in Linguistics specializing in theoretical syntax, language acquisition, and experimental linguistics"
+author: "Victor Nyabuti Ong'era"
+email: "victor.ongera@example.com"
+url: "https://ongevic.github.io"
 baseurl: ""
 
 # Build settings
