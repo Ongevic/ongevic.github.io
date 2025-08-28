@@ -1,0 +1,66 @@
+/*-- scss:defaults --*/
+
+:root {
+  --link-color: #307f96;
+  --heading-color: #507059;
+  --note-bg-color: #dde8f6;
+  --warning-bg-color: #ffece7;
+  --emphasis-bg-color: #d6f5e6;
+  --primary-color: #307f96;
+  --secondary-color: #507059;
+  --light-gray-color: #f8f9fa;
+  --dark-gray-color: #343a40;
+}
+
+/*-- scss:rules --*/
+
+body {
+  font-family: sans-serif;
+  color: var(--dark-gray-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+.navbar {
+  background-color: var(--light-gray-color);
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.nav-link {
+  color: var(--secondary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #266a7f;
+  border-color: #266a7f;
+}
+
+.card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background-color: var(--light-gray-color);
+  border-top: 1px solid #dee2e6;
+}
