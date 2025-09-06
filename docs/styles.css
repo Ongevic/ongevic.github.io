@@ -64,3 +64,90 @@ footer {
   background-color: var(--light-gray-color);
   border-top: 1px solid #dee2e6;
 }
+
+/* Additional styles for researcher website */
+
+/* Profile image styling */
+.about-entity img {
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project cards styling */
+.project-card {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+/* CV section styling */
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Publication styling */
+.publication {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--secondary-color);
+}
+
+/* Skills and tags */
+.skill-tag {
+  display: inline-block;
+  background-color: var(--emphasis-bg-color);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  margin: 0.125rem;
+}
+
+/* Contact links styling */
+.about-links a {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.about-links a:hover {
+  background-color: #266a7f;
+  border-color: #266a7f;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .about-entity {
+    text-align: center;
+  }
+}
+
+/* Table of contents styling */
+.toc-title {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* Highlight current research focus */
+.research-highlight {
+  background-color: var(--emphasis-bg-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--secondary-color);
+  margin: 1rem 0;
+}

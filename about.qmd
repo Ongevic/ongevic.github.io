@@ -1,3 +1,35 @@
+---
+title: "About Me"
+---
+
+## Background
+
 I'm a **PhD Candidate in Sustainable Development & Climate Change** at IUSS Pavia, specializing in crop modeling and climate risk reduction. My research focuses on bridging the gap between climate science and agricultural practice to develop sustainable, climate-resilient farming solutions.
 
-📍 **Location**: Pavia, Lombardy, Italy \| Viborg, Denmark 🌍 **ORCID**: [0000-0002-6603-0718](https://orcid.org/0000-0002-6603-0718)
+## Education
+
+- **PhD in Sustainable Development & Climate Change** - IUSS Pavia (Current)
+- **Master's in Environmental Science** - [Your University]
+- **Bachelor's in Agricultural Sciences** - [Your University]
+
+## Research Interests
+
+- Climate change adaptation in agriculture
+- Crop modeling and yield prediction
+- Sustainable farming practices
+- Food security and climate resilience
+- Environmental risk assessment
+
+## Skills & Expertise
+
+- **Programming**: R, Python, MATLAB
+- **GIS & Remote Sensing**: QGIS, ArcGIS, Google Earth Engine
+- **Crop Models**: DSSAT, APSIM, CropSyst
+- **Statistical Analysis**: Regression modeling, time series analysis
+- **Data Visualization**: ggplot2, matplotlib, Tableau
+
+## Contact Information
+
+📍 **Location**: Pavia, Lombardy, Italy | Viborg, Denmark  
+🌍 **ORCID**: [0000-0002-6603-0718](https://orcid.org/0000-0002-6603-0718)  
+📧 **Email**: victor.ongera@example.com

@@ -1,5 +1,72 @@
 ---
-title: "Projects"
+title: "Research Projects"
 ---
 
-This is the projects page. You can list your projects here.
+## Current Projects
+
+### 🌾 Climate-Resilient Crop Modeling for Smallholder Farmers
+**Duration**: 2022 - Present  
+**Institution**: IUSS Pavia  
+**Funding**: EU Horizon 2020
+
+Developing integrated crop models to assess climate change impacts on smallholder farming systems in Sub-Saharan Africa. This project combines field data, satellite imagery, and machine learning approaches to improve yield predictions under changing climate conditions.
+
+**Key Achievements**:
+- Calibrated DSSAT models for maize and sorghum in Kenya
+- Developed early warning system for drought risk
+- Published 3 peer-reviewed papers
+
+**Technologies**: R, Python, DSSAT, Google Earth Engine, QGIS
+
+---
+
+### 🌡️ Temperature Stress Assessment in Mediterranean Crops
+**Duration**: 2023 - Present  
+**Institution**: University of Copenhagen (Collaboration)  
+**Location**: Viborg, Denmark
+
+Investigating heat stress impacts on olive and grape production systems in the Mediterranean region using controlled environment studies and field experiments.
+
+**Key Achievements**:
+- Established temperature-yield response curves
+- Identified critical growth stages for heat sensitivity
+- Developed adaptation strategies for farmers
+
+**Technologies**: Growth chambers, Data loggers, Statistical modeling
+
+---
+
+### 📊 Agricultural Risk Mapping Platform
+**Duration**: 2021 - 2022  
+**Institution**: IUSS Pavia  
+
+Created a web-based platform for visualizing climate risks to agriculture at regional scales. The platform integrates multiple data sources to provide actionable insights for farmers and policymakers.
+
+**Key Achievements**:
+- Interactive web dashboard with 10+ risk indicators
+- User-friendly interface for non-technical stakeholders
+- Adopted by 3 regional agricultural agencies
+
+**Technologies**: JavaScript, D3.js, PostgreSQL, Python Flask
+
+---
+
+## Publications
+
+1. **Ong'era, V.N.** et al. (2023). "Climate-smart crop modeling for enhanced food security." *Agricultural Systems*, 201, 103-115.
+
+2. **Ong'era, V.N.** et al. (2022). "Assessing drought vulnerability in smallholder farming systems." *Climate Risk Management*, 35, 100-112.
+
+3. Smith, J., **Ong'era, V.N.** et al. (2023). "Heat stress adaptation in Mediterranean agriculture." *European Journal of Agronomy*, 142, 126-138.
+
+---
+
+## Conference Presentations
+
+- **European Geosciences Union (EGU) 2023**: "Integrated modeling approaches for climate-smart agriculture"
+- **World Food Summit 2022**: "Technology solutions for smallholder farmer resilience"
+- **Climate Adaptation Conference 2022**: "Risk assessment tools for agricultural planning"
+
+---
+
+*For more details about any project or collaboration opportunities, please [contact me](mailto:victor.ongera@example.com).*

@@ -1,0 +1,39 @@
+---
+title: "Victor Nyabuti Ong'era"
+subtitle: "PhD Candidate in Sustainable Development & Climate Change"
+about:
+  template: trestles
+  image: images/profile.jpg
+  image-width: 15em
+  image-shape: rounded
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:victor.ongera@example.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/victor-ongera
+    - icon: github
+      text: GitHub
+      href: https://github.com/ongevic
+    - text: "{{< ai orcid >}} ORCID"
+      href: https://orcid.org/0000-0002-6603-0718
+---
+
+## Welcome! 👋
+
+I'm a **PhD Candidate in Sustainable Development & Climate Change** at IUSS Pavia, specializing in crop modeling and climate risk reduction. My research focuses on bridging the gap between climate science and agricultural practice to develop sustainable, climate-resilient farming solutions.
+
+### Research Focus 🌱
+
+- **Climate-Smart Agriculture**: Developing adaptive strategies for smallholder farmers
+- **Crop Modeling**: Using computational models to predict climate impacts on agriculture  
+- **Risk Assessment**: Quantifying climate risks to food security
+- **Sustainable Development**: Integrating environmental and socio-economic factors
+
+### Current Location 📍
+**Pavia, Lombardy, Italy** | **Viborg, Denmark**
+
+---
+
+*"Bridging science and practice for climate-resilient agriculture"*
