@@ -6,10 +6,14 @@ website:
   title: "Victor Nyabuti Ong'era"
   navbar:
     left:
+      - href: index.qmd
+        text: Home
       - href: about.qmd
         text: About
       - href: projects.qmd
         text: Projects
+      - href: cv.qmd
+        text: CV
 
 format:
   html:

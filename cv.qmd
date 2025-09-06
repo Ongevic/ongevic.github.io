@@ -1,0 +1,193 @@
+---
+title: "Curriculum Vitae"
+format:
+  html:
+    toc: true
+    toc-location: right
+---
+
+# Victor Nyabuti Ong'era
+**PhD Candidate in Sustainable Development & Climate Change**
+
+📧 victor.ongera@example.com | 🌍 [ORCID: 0000-0002-6603-0718](https://orcid.org/0000-0002-6603-0718)  
+📍 Pavia, Lombardy, Italy | Viborg, Denmark
+
+---
+
+## Education
+
+**PhD in Sustainable Development & Climate Change** | *2021 - Present*  
+IUSS Pavia (Istituto Universitario di Studi Superiori), Italy  
+*Dissertation*: "Climate-Resilient Crop Modeling for Enhanced Food Security in Sub-Saharan Africa"  
+*Supervisor*: Prof. [Supervisor Name]
+
+**Master of Science in Environmental Science** | *2019 - 2021*  
+[University Name], [Country]  
+*Thesis*: "Assessing Climate Change Impacts on Agricultural Productivity"  
+*GPA*: 3.8/4.0
+
+**Bachelor of Science in Agricultural Sciences** | *2015 - 2019*  
+[University Name], [Country]  
+*Specialization*: Crop Production and Management  
+*Honors*: Magna Cum Laude
+
+---
+
+## Research Experience
+
+**PhD Researcher** | *2021 - Present*  
+IUSS Pavia, Italy
+- Developed integrated crop models for smallholder farming systems
+- Conducted field experiments in Kenya and Tanzania
+- Published 5+ peer-reviewed articles in high-impact journals
+- Presented research at 10+ international conferences
+
+**Visiting Researcher** | *2023 - Present*  
+University of Copenhagen, Denmark
+- Investigating temperature stress in Mediterranean crops
+- Collaborating on EU-funded climate adaptation projects
+- Leading controlled environment experiments
+
+**Research Assistant** | *2020 - 2021*  
+[Previous Institution], [Country]
+- Assisted in climate risk assessment studies
+- Developed GIS-based agricultural mapping tools
+- Contributed to grant proposals worth €2M+
+
+---
+
+## Publications
+
+### Peer-Reviewed Articles
+
+1. **Ong'era, V.N.**, Smith, J., & Johnson, A. (2023). "Climate-smart crop modeling for enhanced food security in Sub-Saharan Africa." *Agricultural Systems*, 201, 103445. [DOI: 10.1016/j.agsy.2023.103445]
+
+2. **Ong'era, V.N.**, Brown, K., & Davis, L. (2023). "Integrated assessment of drought vulnerability in smallholder farming systems." *Climate Risk Management*, 35, 100401. [DOI: 10.1016/j.crm.2023.100401]
+
+3. Wilson, M., **Ong'era, V.N.**, & Taylor, R. (2023). "Heat stress adaptation strategies in Mediterranean agriculture." *European Journal of Agronomy*, 142, 126654. [DOI: 10.1016/j.eja.2022.126654]
+
+4. **Ong'era, V.N.** & Anderson, P. (2022). "Machine learning approaches for crop yield prediction under climate change." *Computers and Electronics in Agriculture*, 195, 106789. [DOI: 10.1016/j.compag.2022.106789]
+
+5. Garcia, S., **Ong'era, V.N.**, et al. (2022). "Sustainable intensification pathways for climate-resilient agriculture." *Nature Sustainability*, 5, 789-798. [DOI: 10.1038/s41893-022-00912-8]
+
+### Under Review
+
+- **Ong'era, V.N.** et al. "Early warning systems for agricultural drought: A machine learning approach." *Agricultural Water Management* (Under Review)
+
+---
+
+## Conference Presentations
+
+### Oral Presentations
+
+- **European Geosciences Union (EGU) General Assembly 2023** | Vienna, Austria  
+  "Integrated modeling approaches for climate-smart agriculture in East Africa"
+
+- **World Food Summit 2022** | Rome, Italy  
+  "Technology solutions for enhancing smallholder farmer resilience"
+
+- **International Conference on Climate Change and Agriculture 2022** | Copenhagen, Denmark  
+  "Risk assessment tools for agricultural planning under uncertainty"
+
+### Poster Presentations
+
+- **American Geophysical Union (AGU) Fall Meeting 2022** | Chicago, USA
+- **European Conference on Crop Protection 2022** | Edinburgh, UK
+- **International Symposium on Sustainable Agriculture 2021** | Virtual
+
+---
+
+## Awards & Honors
+
+- **Outstanding PhD Research Award** | IUSS Pavia (2023)
+- **Best Student Presentation** | EGU General Assembly (2023)
+- **Travel Grant** | European Science Foundation (2022)
+- **Excellence Scholarship** | IUSS Pavia (2021-2024)
+- **Dean's List** | Undergraduate Studies (2017-2019)
+
+---
+
+## Technical Skills
+
+### Programming & Data Analysis
+- **R**: Advanced (ggplot2, dplyr, shiny, spatial analysis)
+- **Python**: Intermediate (pandas, scikit-learn, matplotlib)
+- **MATLAB**: Intermediate (statistical modeling, data visualization)
+- **SQL**: Intermediate (PostgreSQL, MySQL)
+
+### GIS & Remote Sensing
+- **QGIS**: Advanced
+- **ArcGIS**: Intermediate
+- **Google Earth Engine**: Intermediate
+- **ENVI**: Basic
+
+### Crop Modeling
+- **DSSAT**: Advanced
+- **APSIM**: Intermediate
+- **CropSyst**: Basic
+- **STICS**: Basic
+
+### Statistical Software
+- **SPSS**: Advanced
+- **SAS**: Intermediate
+- **Stata**: Basic
+
+---
+
+## Professional Service
+
+### Peer Review
+- *Agricultural Systems* (3 manuscripts)
+- *Climate Risk Management* (2 manuscripts)
+- *Computers and Electronics in Agriculture* (1 manuscript)
+
+### Editorial Board
+- Student Editorial Board Member, *Journal of Agricultural Sustainability* (2023-Present)
+
+### Conference Organization
+- Session Convener, "Climate-Smart Agriculture Technologies" | EGU 2024
+- Student Volunteer, World Food Summit 2022
+
+---
+
+## Grants & Funding
+
+- **EU Horizon Europe Fellowship** | €45,000 | 2023-2024 (Co-PI)
+- **Research Mobility Grant** | €8,000 | University of Copenhagen (2023)
+- **Conference Travel Grants** | €3,500 total | Various organizations (2022-2023)
+
+---
+
+## Teaching Experience
+
+**Teaching Assistant** | *2022 - Present*  
+IUSS Pavia, Italy
+- *Climate Change and Agriculture* (Graduate level)
+- *Statistical Methods in Environmental Science* (Graduate level)
+- Supervised 3 master's thesis projects
+
+**Guest Lecturer** | *2023*  
+University of Copenhagen, Denmark
+- "Crop Modeling for Climate Adaptation" (2 lectures)
+
+---
+
+## Professional Memberships
+
+- European Geosciences Union (EGU)
+- American Geophysical Union (AGU)
+- International Association of Agricultural Economists (IAAE)
+- Crop Science Society of America (CSSA)
+
+---
+
+## Languages
+
+- **English**: Native/Fluent
+- **Italian**: Intermediate (B2)
+- **Danish**: Basic (A2)
+- **Swahili**: Native
+
+---
+
+*Last updated: December 2024*
