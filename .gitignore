@@ -1,6 +1,8 @@
 # mdBook output
 /book/
 /_book_source/
+.filesmd-book-check/
+.filesmd-preview/
 
 # IDE
 .idea/
@@ -12,6 +14,7 @@
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Logs
 *.log
@@ -25,3 +28,30 @@ Thumbs.db
 # Local authoring tools - the repository holds website content only
 /EDITING.md
 /*.ps1
+
+# Secrets and credentials - never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+credentials.json
+credentials*.json
+secrets.json
+secrets.*
+.npmrc
+.pypirc
+
+# Dependency and build directories
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+target/
