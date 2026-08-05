@@ -1,0 +1,21 @@
+[book]
+title = "Victor Nyabuti Ong'era"
+authors = ["Victor Nyabuti Ong'era"]
+description = "Research, CV, projects, and practical notes on climate-resilient agriculture."
+language = "en"
+src = "."
+
+[build]
+build-dir = "book"
+
+[output.html]
+site-url = "/"
+default-theme = "light"
+preferred-dark-theme = "navy"
+no-section-label = true
+additional-css = ["theme/custom.css"]
+git-repository-url = "https://github.com/Ongevic/ongevic.github.io"
+edit-url-template = "https://github.com/Ongevic/ongevic.github.io/edit/main/{path}"
+
+[output.html.search]
+enable = false

@@ -1,0 +1,27 @@
+# mdBook output
+/book/
+/_book_source/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local editor and AI-tool artifacts
+.claude/
+/Chat.md
+/Help.md
+/archive/
+
+# Local authoring tools - the repository holds website content only
+/EDITING.md
+/*.ps1

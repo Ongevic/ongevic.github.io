@@ -1,0 +1,108 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-identity">
+      <a class="site-brand" href="{{ path_to_root }}index.html">Victor Ong'era<span class="site-cursor" aria-hidden="true"></span></a>
+      <span class="site-tagline">ongevic.github.io</span>
+    </div>
+    <div class="site-controls">
+      <nav class="site-nav" aria-label="Main navigation"></nav>
+      <button class="site-theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme">
+        <span aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </div>
+</header>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // The top navigation is generated from SUMMARY.md: every top-level entry
+    // becomes a link, indented entries do not. Editing SUMMARY.md is enough.
+    const nav = document.querySelector(".site-nav");
+    const normalize = (path) => path.replace(/index\.html$/, "").replace(/\/$/, "");
+
+    // The header scrolls away with the page, so the same links are repeated in
+    // a footer at the end of every page.
+    const buildFooter = (sources, current) => {
+      const main = document.querySelector(".content main");
+      if (!main || document.querySelector(".site-footer")) return;
+
+      const footer = document.createElement("footer");
+      footer.className = "site-footer";
+
+      const footerNav = document.createElement("nav");
+      footerNav.className = "site-nav site-nav-footer";
+      footerNav.setAttribute("aria-label", "Footer navigation");
+      sources.forEach((link) => footerNav.appendChild(link.cloneNode(true)));
+
+      const note = document.createElement("p");
+      note.className = "site-footer-note";
+      note.textContent = "Victor Nyabuti Ong'era · ongevic.github.io";
+
+      footer.append(footerNav, note);
+      main.appendChild(footer);
+    };
+
+    const buildNav = () => {
+      const list = document.querySelector(".sidebar-scrollbox ol.chapter");
+      if (!list) return false;
+
+      const sources = Array.from(list.children)
+        .filter((item) => item.classList.contains("chapter-item"))
+        .map((item) => item.querySelector("a"))
+        .filter(Boolean);
+      if (!sources.length) return false;
+
+      const current = normalize(window.location.pathname);
+      nav.replaceChildren();
+      sources.forEach((source) => {
+        const link = document.createElement("a");
+        link.href = source.getAttribute("href");
+        link.textContent = source.textContent.trim();
+        if (normalize(new URL(link.href, window.location.href).pathname) === current) {
+          link.setAttribute("aria-current", "page");
+        }
+        nav.appendChild(link);
+      });
+
+      buildFooter(Array.from(nav.children), current);
+      return true;
+    };
+
+    if (!buildNav()) {
+      // toc.js normally runs before this point; wait for it if it has not.
+      const scrollbox = document.querySelector(".sidebar-scrollbox");
+      if (scrollbox) {
+        const observer = new MutationObserver(() => {
+          if (buildNav()) observer.disconnect();
+        });
+        observer.observe(scrollbox, { childList: true, subtree: true });
+      }
+    }
+
+    const toggle = document.querySelector(".site-theme-toggle");
+    let activeTheme = document.documentElement.classList.contains("navy") ? "navy" : "light";
+
+    if (!["light", "navy"].some((theme) => document.documentElement.classList.contains(theme))) {
+      document.documentElement.classList.remove("rust", "coal", "ayu");
+      document.documentElement.classList.add("light");
+      localStorage.setItem("mdbook-theme", "light");
+      activeTheme = "light";
+    }
+
+    const updateToggle = () => {
+      const dark = activeTheme === "navy";
+      toggle.querySelector("span").textContent = dark ? "☀" : "☾";
+      toggle.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+      toggle.setAttribute("title", dark ? "Switch to light theme" : "Switch to dark theme");
+    };
+
+    toggle.addEventListener("click", () => {
+      activeTheme = activeTheme === "navy" ? "light" : "navy";
+      document.documentElement.classList.remove("light", "rust", "coal", "navy", "ayu");
+      document.documentElement.classList.add(activeTheme);
+      localStorage.setItem("mdbook-theme", activeTheme);
+      updateToggle();
+    });
+
+    updateToggle();
+  });
+</script>
