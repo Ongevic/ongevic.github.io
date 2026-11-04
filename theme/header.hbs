@@ -84,7 +84,7 @@
     if (!["light", "navy"].some((theme) => document.documentElement.classList.contains(theme))) {
       document.documentElement.classList.remove("rust", "coal", "ayu");
       document.documentElement.classList.add("light");
-      localStorage.setItem("mdbook-theme", "light");
+      try { localStorage.setItem("mdbook-theme", "light"); } catch (e) { /* storage unavailable */ }
       activeTheme = "light";
     }
 
@@ -99,7 +99,7 @@
       activeTheme = activeTheme === "navy" ? "light" : "navy";
       document.documentElement.classList.remove("light", "rust", "coal", "navy", "ayu");
       document.documentElement.classList.add(activeTheme);
-      localStorage.setItem("mdbook-theme", activeTheme);
+      try { localStorage.setItem("mdbook-theme", activeTheme); } catch (e) { /* storage unavailable */ }
       updateToggle();
     });
 
